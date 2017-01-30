@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std;
+#include "String.h"
+
+int main()
+{
+	String string1 = String();
+	
+	cout << string1.toCharArray() << endl;
+	cout << string1.getSize() << endl;
+
+	String string2("GigaPrime");
+
+	cout << string2.toCharArray() << endl;
+	cout << string2.getSize() << endl;
+
+	String string3 = string2;
+
+	cout << string3.toCharArray() << endl;
+	cout << string3.getSize() << endl;
+
+	String str1("GigaPrime");
+	String str2("GagaPrime");
+	String str3("GigaPrime1");
+
+	cout << str1.toCharArray() << " == " << str2.toCharArray() << " is " << (str1 == str2? "true" : "false") << endl;
+
+	String st1("123");
+	String st2("+");
+	String st3("456");
+
+	st1.operator+(st2);
+
+
+	return 0;
+}
