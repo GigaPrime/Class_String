@@ -31,7 +31,7 @@ int main()
 	String st1("ABC");
 	String st2("DEF");
 	
-	st1.operator+=(st2);
+	st1 += (st2);
 	
 	cout << st1.toCharArray() << endl;
 	cout << "New string size is: " << st1.getSize() << endl;
@@ -39,7 +39,7 @@ int main()
 	//------------ operator= ------------//
 	String st3("Previous string");
 	String st4("New string");
-	st3.operator=(st4);
+	st3 = (st4);
 
 	cout << st3.toCharArray() << endl;
 
